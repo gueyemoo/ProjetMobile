@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".AddUserActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="MES INFORMATIONS"
+        android:textColor="#FFF"
+        android:textSize="23sp"
+        android:layout_gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFF"
+            android:textSize="21sp"
+            android:text="Pseudo : " />
+
+        <EditText
+            android:id="@+id/pseudo_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:layout_gravity="center"
+            android:maxLength="9"
+            android:hint="max 9 car"
+            android:inputType="textPersonName"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textSize="21sp"
+            android:layout_gravity="center"
+            android:text="Age : " />
+
+        <NumberPicker
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:textSize="21sp"
+                android:layout_gravity="center"
+                android:text="Je suis : " />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/sexe"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:checkedButton="@+id/garcon"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/garcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:textSize="21sp"
+                    android:text="Garçon" />
+
+                <RadioButton
+                    android:id="@+id/fille"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:textSize="21sp"
+                    android:text="Fille" />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="112dp"
+            android:gravity="center"
+            android:src="@drawable/save" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

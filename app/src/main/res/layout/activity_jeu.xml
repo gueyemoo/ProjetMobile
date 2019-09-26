@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".ChoixCategorieExerciceActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Salut, que veux tu faire ?" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/maths"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:onClick="goMaths"
+                android:src="@drawable/maths" />
+
+
+            <ImageView
+                android:id="@+id/quizz"
+                android:layout_width="wrap_content"
+                android:layout_height="69dp"
+                android:gravity="center"
+                android:onClick="goQuizz"
+                android:src="@drawable/globe" />
+
+            <TextView
+                android:id="@+id/Langues"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Langues"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:onClick="Langues_click"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+
