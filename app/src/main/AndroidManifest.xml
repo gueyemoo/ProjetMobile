@@ -12,6 +12,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MenuActivity"></activity>
         <activity android:name=".FrancaisActivity" />
+        <activity android:name=".PenduActivity" />
         <activity android:name=".QuizActivity" />
         <activity
             android:name=".AdditionActivity"

@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
                 adapter.clear();
                 adapter.addAll(users);
 
-                // Now, notify the adapter of the change in source
+                // Notifier l'adapter des changements
                 adapter.notifyDataSetChanged();
             }
 

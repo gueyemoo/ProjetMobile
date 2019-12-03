@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/background"
@@ -32,29 +31,66 @@
 
             <ImageView
                 android:id="@+id/maths"
+                android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="75dp"
                 android:gravity="center"
                 android:onClick="goMaths"
-                android:src="@drawable/maths" />
+                android:src="@drawable/calculator" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcul"
+                android:textSize="30dp"
+                android:layout_marginBottom="25dp"></TextView>
 
 
             <ImageView
                 android:id="@+id/quizz"
+                android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="69dp"
+                android:layout_height="75dp"
                 android:gravity="center"
                 android:onClick="goQuizz"
-                android:src="@drawable/globe" />
-
+                android:paddingRight="10dp"
+                android:src="@drawable/quiz" />
             <TextView
-                android:id="@+id/Langues"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz"
+                android:textSize="30dp"
+                android:layout_marginBottom="25dp"></TextView>
+
+            <ImageView
+                android:id="@+id/langues"
+                android:layout_width="wrap_content"
                 android:layout_height="75dp"
+                android:gravity="center"
+                android:src="@drawable/worldwide"
+                android:onClick="langues_click"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Langues"
                 android:gravity="center"
                 android:textSize="30dp"
-                android:onClick="Langues_click"/>
+                android:layout_marginBottom="25dp"></TextView>
+
+
+            <ImageView
+                android:id="@+id/pendu"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:src="@drawable/controller"
+                android:onClick="pendu_click" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendu"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_marginBottom="25dp"/>
 
         </LinearLayout>
 
