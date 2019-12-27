@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@android:color/white"
     android:padding="16dp"
     tools:context=".QuizActivity">
 
@@ -15,7 +15,6 @@
 
         <TextView
             android:id="@+id/text_view_score"
-            android:textColor="#FFF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -29,7 +28,6 @@
             android:layout_below="@id/text_view_score"
             android:textSize="20sp"
             android:text="Question: 1/x"
-            android:textColor="#FFF"
             android:freezesText="true"/>
 
         <TextView
@@ -39,7 +37,6 @@
             android:layout_marginRight="20dp"
             android:layout_gravity="right"
             android:text="00:30"
-            android:textColor="#FFF"
             android:textSize="50sp"
             android:freezesText="true"/>
 
@@ -61,7 +58,6 @@
             android:layout_marginBottom="16dp"
             android:text=""
             android:textAlignment="center"
-            android:textColor="#FFF"
             android:textSize="30sp"
             android:freezesText="true"/>
 
@@ -77,7 +73,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="23sp"
-                android:textColor="#FFF"
                 android:text="Option 1"
                 android:freezesText="true"/>
 
@@ -86,7 +81,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="23sp"
-                android:textColor="#FFF"
                 android:text="Option 2"
                 android:freezesText="true"/>
 
@@ -95,7 +89,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="23sp"
-                android:textColor="#FFF"
                 android:text="Option 3"
                 android:freezesText="true"/>
 

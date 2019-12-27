@@ -7,10 +7,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.L3MobileProjet.DB.DBClient;
+import com.example.L3MobileProjet.DB.User;
+
 
 public class ChoixCategorieExerciceActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE_QUIZ = 1;
+
+    private DBClient mDb;
 
 
     @Override
@@ -19,8 +24,6 @@ public class ChoixCategorieExerciceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_jeu);
 
         ((MyApp) this.getApplication()).setNbOpe(0);
-
-
     }
 
     public void goQuizz(View view) {
@@ -52,6 +55,15 @@ public class ChoixCategorieExerciceActivity extends AppCompatActivity {
     public void pendu_click(View view) {
 
         Intent intent = new Intent(this, PenduActivity.class);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+    }
+
+    public void pays_click(View view) {
+
+        Intent intent = new Intent(this, PaysActivity.class);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 

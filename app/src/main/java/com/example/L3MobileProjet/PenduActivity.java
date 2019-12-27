@@ -1,6 +1,8 @@
 package com.example.L3MobileProjet;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.L3MobileProjet.DB.DBClient;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -33,11 +37,15 @@ public class PenduActivity extends AppCompatActivity implements View.OnClickList
     private List<Character> listOfLetters = new ArrayList<>();
     private boolean win;
     private List<String> listeDeMot = new ArrayList<>();
+    private long backPressedTime;
+    private DBClient mDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pendu);
+
+        mDb = DBClient.getInstance(getApplicationContext());
 
         instruction();//charge l'instruction de l'exercice
 
@@ -173,6 +181,8 @@ public class PenduActivity extends AppCompatActivity implements View.OnClickList
         if(!win){
             builder.setTitle("Vous avez perdu !");
             builder.setMessage("Le bon mot était: " + word);
+        }else{
+            saveScore(10);
         }
 
         builder.setPositiveButton("Rejouer", new DialogInterface.OnClickListener() {
@@ -212,8 +222,46 @@ public class PenduActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            finish();
+        } else {
+            Toast.makeText(this, "Appuyer de nouveau pour quitter", Toast.LENGTH_SHORT).show();
+        }
+
+        backPressedTime = System.currentTimeMillis();
+
+    }
+
+    private void saveScore(final int score) {
+
+        final int userId;
+        userId = ((MyApp) this.getApplication()).getId();
+
+
+        class SaveScore extends AsyncTask<Void, Void, Boolean> {
+
+            @Override
+            protected Boolean doInBackground(Void... voids) {
+
+                // adding to database
+                mDb.getAppDatabase()
+                        .mydao()
+                        .addScore(score, userId);
+
+                return true;
+            }
+
+        }
+
+        SaveScore st = new SaveScore();
+        st.execute();
+    }
+
+
     private void instruction(){ //Cette fonction affiche les instructions de l'exercice
-        String htmlString ="<u>INSTRUCTION:</u> Dans cet exercice il faut deviner le bon mot <font color=\"red\">ATTENTION</font> à chaque erreur un membre du pendu se mets en place.";
+        String htmlString ="<u>INSTRUCTION:</u> Dans cet exercice il faut deviner le bon mot <font color=\"red\">ATTENTION</font> à chaque erreur un membre du pendu se mets en place. Chaque mot deviner rapporte 10 points.";
         android.app.AlertDialog.Builder alertDialogBuilder = new android.app.AlertDialog.Builder(PenduActivity.this);
         alertDialogBuilder.setMessage(Html.fromHtml(htmlString)).setCancelable(false).setPositiveButton("Compris",
                 new DialogInterface.OnClickListener() {

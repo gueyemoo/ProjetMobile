@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/background"
+    android:background="@android:color/white"
     android:layout_height="match_parent"
     tools:context=".AddUserActivity"
     android:orientation="vertical">
@@ -29,7 +29,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="#FFF"
             android:textSize="21sp"
             android:text="Pseudo : " />
 
@@ -37,7 +36,6 @@
             android:id="@+id/pseudo_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FFF"
             android:layout_gravity="center"
             android:maxLength="9"
             android:hint="max 9 car"
@@ -56,7 +54,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FFF"
             android:textSize="21sp"
             android:layout_gravity="center"
             android:text="Age : " />
@@ -66,6 +63,7 @@
             android:layout_width="wrap_content"
             android:theme="@style/AppTheme.Picker"
             android:layout_marginLeft="10dp"
+            android:background="@android:color/darker_gray"
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
 
@@ -78,7 +76,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#FFF"
                 android:textSize="21sp"
                 android:layout_gravity="center"
                 android:text="Je suis : " />
@@ -96,7 +93,6 @@
                     android:id="@+id/garcon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#FFF"
                     android:textSize="21sp"
                     android:text="Garçon" />
 
@@ -104,7 +100,6 @@
                     android:id="@+id/fille"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#FFF"
                     android:textSize="21sp"
                     android:text="Fille" />
 

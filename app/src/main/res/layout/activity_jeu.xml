@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/background"
+    android:background="@android:color/white"
     android:layout_height="match_parent"
     tools:context=".ChoixCategorieExerciceActivity"
     android:orientation="vertical">
@@ -11,7 +11,6 @@
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#FFF"
         android:textSize="24sp"
         android:layout_gravity="center_horizontal"
         android:text="Salut, que veux tu faire ?" />
@@ -20,7 +19,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -92,6 +92,20 @@
                 android:textSize="30dp"
                 android:layout_marginBottom="25dp"/>
 
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:src="@drawable/flag"
+                android:onClick="pays_click" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pays"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_marginBottom="25dp"/>
         </LinearLayout>
 
 

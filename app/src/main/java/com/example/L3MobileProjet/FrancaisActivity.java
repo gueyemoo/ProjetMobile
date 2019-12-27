@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.example.L3MobileProjet.DB.DBClient;
@@ -42,6 +43,9 @@ public class FrancaisActivity extends AppCompatActivity {
     int curQuestions = 0;
     int i = 0;
     Random r;
+
+    private long backPressedTime;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -139,7 +143,7 @@ public class FrancaisActivity extends AppCompatActivity {
                     commentaire.setVisibility(View.VISIBLE);
                     reponse.setEnabled(false);
                     commentaire.setText("BRAVO ! Tu maitrises toutes les figures de style !");
-                    finishQuiz();
+                    saveScore(score);
                     bouton_continuer.setText("Retour Choix Catégorie");
                     bouton_continuer.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -152,6 +156,19 @@ public class FrancaisActivity extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            finish();
+        } else {
+            Toast.makeText(this, "Appuyer de nouveau pour quitter", Toast.LENGTH_SHORT).show();
+        }
+
+        backPressedTime = System.currentTimeMillis();
+
     }
 
 

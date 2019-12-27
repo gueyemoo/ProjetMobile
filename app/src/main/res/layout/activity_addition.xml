@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@android:color/white"
     tools:context=".AdditionActivity"
     android:orientation="vertical">
 
@@ -15,7 +15,6 @@
         android:layout_marginTop="50dp"
         android:text="Additions : "
         android:layout_gravity="center_horizontal"
-        android:textColor="#FFF"
         android:textSize="24sp"/>
 
     <LinearLayout
@@ -30,13 +29,11 @@
             android:id="@+id/calcul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FFF"
             android:textSize="21sp"/>
 
         <EditText
             android:id="@+id/resultat"
             android:layout_width="50dp"
-            android:textColor="#FFF"
             android:textSize="21sp"
             android:layout_height="50dp"
             android:inputType="number" />
