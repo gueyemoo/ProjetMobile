@@ -9,13 +9,11 @@
         android:id="@+id/template_calcul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#FFF"
         android:textSize="18sp"/>
 
     <EditText
         android:id="@+id/template_resultat"
         android:layout_width="50dp"
-        android:textColor="#FFF"
         android:textSize="18sp"
         android:layout_height="50dp"
         android:inputType="number" />
@@ -26,7 +24,6 @@
         android:layout_marginLeft="50dp"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textColor="#FFF"
         android:textSize="18sp"/>
 
 </LinearLayout>

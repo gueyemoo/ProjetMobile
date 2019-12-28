@@ -7,40 +7,43 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.L3MobileProjet.DB.DBClient;
+import com.example.L3MobileProjet.DB.User;
+
 
 public class ChoixCategorieExerciceActivity extends AppCompatActivity {
 
-        private static final int REQUEST_CODE_QUIZ = 1;
+    private static final int REQUEST_CODE_QUIZ = 1;
+
+    private DBClient mDb;
 
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_jeu);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_jeu);
 
-            ((MyApp) this.getApplication()).setNbOpe(0);
+        ((MyApp) this.getApplication()).setNbOpe(0);
+    }
 
+    public void goQuizz(View view) {
 
-        }
+        Intent intent = new Intent(this, QuizActivity.class);
+        startActivityForResult(intent, REQUEST_CODE_QUIZ);
 
-        public void goQuizz(View view) {
+    }
 
-            Intent intent = new Intent(this, QuizActivity.class);
-            startActivityForResult(intent, REQUEST_CODE_QUIZ);
+    public void goMaths(View view) {
 
-        }
+        Intent intent = new Intent(this, MathsActivity.class);
 
-        public void goMaths(View view) {
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
-            Intent intent = new Intent(this,MathsActivity.class);
+        startActivity(intent);
 
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
 
-            startActivity(intent);
-
-        }
-
-    public void Langues_click(View view) {
+    public void langues_click(View view) {
 
         Intent intent = new Intent(this, FrancaisActivity.class);
 
@@ -49,6 +52,21 @@ public class ChoixCategorieExerciceActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void pendu_click(View view) {
 
+        Intent intent = new Intent(this, PenduActivity.class);
 
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
     }
+
+    public void pays_click(View view) {
+
+        Intent intent = new Intent(this, PaysActivity.class);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+    }
+}

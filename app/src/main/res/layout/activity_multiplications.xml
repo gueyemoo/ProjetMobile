@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@android:color/white"
     tools:context=".MultiplicationsActivity"
     android:orientation="vertical">
 
@@ -15,7 +15,6 @@
         android:layout_marginTop="10dp"
         android:text="Multiplications : "
         android:layout_gravity="center_horizontal"
-        android:textColor="#FFF"
         android:textSize="24sp"/>
 
 
