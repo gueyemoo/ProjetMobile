@@ -1,0 +1,4 @@
+#Fri Dec 27 13:55:12 CET 2019
+base.0=C\:\\Users\\MohamedGueye\\Documents\\Android Studio\\ProjetMobile\\ILearn1-master\\Projet\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
