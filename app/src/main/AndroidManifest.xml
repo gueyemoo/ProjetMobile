@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.L3MobileProjet">
+    package="com.project.MobileProjet">
 
     <application
-        android:name=".MyApp"
+        android:name="com.project.MobileProjet.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".FrancaisActivity" />
-        <activity android:name=".PenduActivity" />
-        <activity android:name=".QuizActivity" />
-        <activity android:name=".PaysActivity"/>
+        <activity android:name="com.project.MobileProjet.MenuActivity"></activity>
+        <activity android:name="com.project.MobileProjet.MainActivity"></activity>
+        <activity android:name="com.project.MobileProjet.FrancaisActivity" />
+        <activity android:name="com.project.MobileProjet.PenduActivity" />
+        <activity android:name="com.project.MobileProjet.QuizActivity" />
+        <activity android:name="com.project.MobileProjet.PaysActivity"/>
         <activity
-            android:name=".AdditionActivity"
+            android:name="com.project.MobileProjet.AdditionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AddUserActivity"
+            android:name="com.project.MobileProjet.AddUserActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ChoixTables"
+            android:name="com.project.MobileProjet.ChoixTables"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MultiplicationsActivity"
+            android:name="com.project.MobileProjet.MultiplicationsActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".MathsActivity" />
-        <activity android:name=".ChoixCategorieExerciceActivity" />
+        <activity android:name="com.project.MobileProjet.MathsActivity" />
+        <activity android:name="com.project.MobileProjet.ChoixCategorieExerciceActivity" />
         <activity
-            android:name=".ActivitySplash"
+            android:name="com.project.MobileProjet.ActivitySplash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

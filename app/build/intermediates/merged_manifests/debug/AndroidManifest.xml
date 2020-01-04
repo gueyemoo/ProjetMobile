@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.example.L3MobileProjet.MyApp"
+        android:name="com.project.MobileProjet.MyApp"
         android:allowBackup="true"
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         android:debuggable="true"
@@ -24,30 +24,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.L3MobileProjet.MenuActivity" />
-        <activity android:name="com.example.L3MobileProjet.MainActivity" />
-        <activity android:name="com.example.L3MobileProjet.FrancaisActivity" />
-        <activity android:name="com.example.L3MobileProjet.PenduActivity" />
-        <activity android:name="com.example.L3MobileProjet.QuizActivity" />
-        <activity android:name="com.example.L3MobileProjet.PaysActivity" />
+        <activity android:name="com.project.MobileProjet.MenuActivity" />
+        <activity android:name="com.project.MobileProjet.MainActivity" />
+        <activity android:name="com.project.MobileProjet.FrancaisActivity" />
+        <activity android:name="com.project.MobileProjet.PenduActivity" />
+        <activity android:name="com.project.MobileProjet.QuizActivity" />
+        <activity android:name="com.project.MobileProjet.PaysActivity" />
         <activity
-            android:name="com.example.L3MobileProjet.AdditionActivity"
+            android:name="com.project.MobileProjet.AdditionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.L3MobileProjet.AddUserActivity"
+            android:name="com.project.MobileProjet.AddUserActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.L3MobileProjet.ChoixTables"
+            android:name="com.project.MobileProjet.ChoixTables"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.L3MobileProjet.MultiplicationsActivity"
+            android:name="com.project.MobileProjet.MultiplicationsActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.example.L3MobileProjet.MathsActivity" />
-        <activity android:name="com.example.L3MobileProjet.ChoixCategorieExerciceActivity" />
+        <activity android:name="com.project.MobileProjet.MathsActivity" />
+        <activity android:name="com.project.MobileProjet.ChoixCategorieExerciceActivity" />
         <activity
-            android:name="com.example.L3MobileProjet.ActivitySplash"
+            android:name="com.project.MobileProjet.ActivitySplash"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

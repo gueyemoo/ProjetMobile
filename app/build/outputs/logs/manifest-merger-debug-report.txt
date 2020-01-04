@@ -41,7 +41,7 @@ INJECTED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn
 INJECTED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:2:1-51:12
 INJECTED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:3:5-41
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -77,69 +77,69 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\MohamedGue
 	android:theme
 		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:12:9-40
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:6:9-30
-activity#com.example.L3MobileProjet.MenuActivity
-ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:13:9-59
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:6:9-54
+activity#com.project.MobileProjet.MenuActivity
+ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:13:9-83
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:13:19-47
-activity#com.example.L3MobileProjet.MainActivity
-ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:14:9-59
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:13:19-71
+activity#com.project.MobileProjet.MainActivity
+ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:14:9-83
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:14:19-47
-activity#com.example.L3MobileProjet.FrancaisActivity
-ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:14:19-71
+activity#com.project.MobileProjet.FrancaisActivity
+ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:15:9-78
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:15:19-51
-activity#com.example.L3MobileProjet.PenduActivity
-ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:16:9-51
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:15:19-75
+activity#com.project.MobileProjet.PenduActivity
+ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:16:9-75
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:16:19-48
-activity#com.example.L3MobileProjet.QuizActivity
-ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:17:9-50
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:16:19-72
+activity#com.project.MobileProjet.QuizActivity
+ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:17:9-74
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:17:19-47
-activity#com.example.L3MobileProjet.PaysActivity
-ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:18:9-49
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:17:19-71
+activity#com.project.MobileProjet.PaysActivity
+ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:18:9-73
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:18:19-47
-activity#com.example.L3MobileProjet.AdditionActivity
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:18:19-71
+activity#com.project.MobileProjet.AdditionActivity
 ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:19:9-21:52
 	android:screenOrientation
 		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:21:13-49
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:20:13-45
-activity#com.example.L3MobileProjet.AddUserActivity
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:20:13-69
+activity#com.project.MobileProjet.AddUserActivity
 ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:22:9-24:52
 	android:screenOrientation
 		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:24:13-49
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:23:13-44
-activity#com.example.L3MobileProjet.ChoixTables
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:23:13-68
+activity#com.project.MobileProjet.ChoixTables
 ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:25:9-27:52
 	android:screenOrientation
 		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:27:13-49
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:26:13-40
-activity#com.example.L3MobileProjet.MultiplicationsActivity
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:26:13-64
+activity#com.project.MobileProjet.MultiplicationsActivity
 ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:28:9-30:52
 	android:screenOrientation
 		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:30:13-49
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:29:13-52
-activity#com.example.L3MobileProjet.MathsActivity
-ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:31:9-51
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:29:13-76
+activity#com.project.MobileProjet.MathsActivity
+ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:31:9-75
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:31:19-48
-activity#com.example.L3MobileProjet.ChoixCategorieExerciceActivity
-ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:32:9-68
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:31:19-72
+activity#com.project.MobileProjet.ChoixCategorieExerciceActivity
+ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:32:9-92
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:32:19-65
-activity#com.example.L3MobileProjet.ActivitySplash
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:32:19-89
+activity#com.project.MobileProjet.ActivitySplash
 ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:33:9-41:20
 	android:screenOrientation
 		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:35:13-49
 	android:name
-		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:34:13-43
+		ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:34:13-67
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\MohamedGueye\Documents\Android Studio\ProjetMobile\ILearn1-master\Projet\app\src\main\AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
