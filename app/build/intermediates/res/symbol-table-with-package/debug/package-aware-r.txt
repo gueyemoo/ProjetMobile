@@ -793,6 +793,11 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_add
+id btn_conjugaison
+id btn_mult
+id btn_ortho
+id btn_pays
 id btn_send
 id buttonPanel
 id button_confirm_next
@@ -822,6 +827,10 @@ id default_activity_button
 id dimensions
 id direct
 id disableHome
+id divider
+id divider2
+id divider3
+id divider4
 id drapeau
 id edit_query
 id end
@@ -854,9 +863,11 @@ id item_touch_helper_previous_elevation
 id iv_pendu
 id joueur
 id langues
+id layoutPDF
 id left
 id line1
 id line3
+id linearLayout
 id listMode
 id listUsers
 id list_item
@@ -877,6 +888,7 @@ id np
 id packed
 id parent
 id parentPanel
+id pdfView
 id pendu
 id percent
 id plus
@@ -907,6 +919,7 @@ id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id search_badge
 id search_bar
 id search_button
@@ -948,6 +961,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id text_cours
 id text_view_countdown
 id text_view_question
 id text_view_question_count
@@ -960,9 +974,14 @@ id titleSplash
 id title_template
 id titre
 id titreMenu
+id titre_cours
 id top
 id topPanel
 id tv_lettres_tapees
+id txt_francais
+id txt_geo
+id txt_maths
+id txt_top
 id uniform
 id up
 id useLogo
@@ -1007,6 +1026,9 @@ layout abc_tooltip
 layout activity_add_user
 layout activity_addition
 layout activity_choix_tables
+layout activity_cours
+layout activity_courshtml
+layout activity_courspdf
 layout activity_francais
 layout activity_jeu
 layout activity_main
