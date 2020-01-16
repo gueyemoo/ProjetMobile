@@ -31,5 +31,5 @@ dependencies {
     implementation "android.arch.persistence.room:runtime:$room_version"
     annotationProcessor "android.arch.persistence.room:compiler:$room_version"
     testImplementation "android.arch.persistence.room:testing:$room_version"
-    compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+    implementation 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
 }

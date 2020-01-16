@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.project.MobileProjet.DB.DBClient;
+import com.project.MobileProjet.DB.User;
+import com.project.MobileProjet.QuizActivity;
+import com.project.MobileProjet.R;
 
 
 public class ChoixCategorieExerciceActivity extends AppCompatActivity {

@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.project.MobileProjet.DB.DBClient;
+import com.project.MobileProjet.R;
 import com.project.MobileProjet.model.Multiplication;
 import com.project.MobileProjet.model.TableMultiplication;
 

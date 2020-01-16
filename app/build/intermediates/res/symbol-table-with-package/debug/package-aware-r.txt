@@ -1034,10 +1034,12 @@ layout activity_jeu
 layout activity_main
 layout activity_maths
 layout activity_menu
+layout activity_menu_duel
 layout activity_multiplications
 layout activity_pays
 layout activity_pendu
 layout activity_quiz
+layout activity_selection_profil_duel
 layout activity_splash
 layout list_elem_layout
 layout notification_action
