@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.project.MobileProjet">
+    package="com.project.MobileProjet"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
 
     <uses-feature
         android:name="android.hardware.camera2"
@@ -24,6 +27,7 @@
         <activity android:name=".PenduActivity" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".PaysActivity" />
+        <activity android:name=".SelectionProfilDuelActivity" />
         <activity
             android:name=".AdditionActivity"
             android:screenOrientation="portrait" />
@@ -38,6 +42,7 @@
             android:screenOrientation="portrait" />
         <activity android:name=".MathsActivity" />
         <activity android:name=".ChoixCategorieExerciceActivity" />
+
         <activity
             android:name=".ActivitySplash"
             android:screenOrientation="portrait">

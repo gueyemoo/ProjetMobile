@@ -5,7 +5,7 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
-@Database(entities = {User.class},version =1, exportSchema = false)
+@Database(entities = {User.class , ScoreDuel.class},version =1, exportSchema = false)
 public abstract class MyDB extends RoomDatabase {
 
     private static MyDB INSTANCE;

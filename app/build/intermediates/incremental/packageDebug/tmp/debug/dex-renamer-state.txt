@@ -1,4 +1,4 @@
-#Thu Jan 16 17:27:14 CET 2020
-base.0=C\:\\Users\\antoi\\MIASHS\\GitProjetMob\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Fri Jan 17 00:40:19 CET 2020
+base.0=D\:\\Programmation\\Android\\ProjetMobile\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

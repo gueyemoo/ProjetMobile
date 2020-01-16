@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="171dp">
 
         <TextView
-            android:id="@+id/titreMenu"
+            android:id="@+id/titreDuels"
             android:layout_marginTop="50sp"
             android:text="MENU"
             android:layout_width="match_parent"
@@ -26,7 +26,7 @@
             android:textSize="35sp"/>
 
         <TextView
-            android:id="@+id/ExerciceChoix"
+            android:id="@+id/local"
             android:layout_marginTop="150sp"
             android:text="EXERCICE"
             android:layout_width="match_parent"
@@ -37,17 +37,18 @@
             android:onClick="goExercice"/>
 
         <TextView
-            android:id="@+id/DuelChoix"
+            android:id="@+id/online"
             android:layout_marginTop="60sp"
             android:text="MODE DUEL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="#FFF"
-            android:textSize="35sp"/>
+            android:textSize="35sp"
+            android:onClick="goDuel"/>
 
         <TextView
-            android:id="@+id/CoursChoix"
+            android:id="@+id/profileOnline"
             android:layout_marginTop="60sp"
             android:text="MES COURS"
             android:layout_width="match_parent"

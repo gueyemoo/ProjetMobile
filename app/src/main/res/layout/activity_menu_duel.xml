@@ -4,6 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuDuel">
+    android:background="@drawable/background"
+    tools:context="com.project.MobileProjet.MenuDuelActivity"
+    android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="171dp">
+
+        <TextView
+            android:id="@+id/titreDuels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:gravity="center"
+            android:text="DUEL"
+            android:textColor="#FFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150sp"
+            android:gravity="center"
+            android:onClick="goDuelLocal"
+            android:text="LOCAL"
+            android:textColor="#FFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:gravity="center"
+            android:text="ONLINE"
+            android:textColor="#FFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/profileOnline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:gravity="center"
+            android:text="PROFIL ONLINE"
+            android:textColor="#FFF"
+            android:textSize="35sp" />
+
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

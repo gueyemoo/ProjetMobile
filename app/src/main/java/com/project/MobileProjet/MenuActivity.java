@@ -23,4 +23,14 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void goDuel(View view) {
+
+        Intent intent = new Intent(this, MenuDuelActivity.class);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+
+    }
 }

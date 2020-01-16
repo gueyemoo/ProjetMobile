@@ -9,13 +9,21 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/titre"
+        android:id="@+id/joueur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Additions : "
         android:layout_gravity="center_horizontal"
-        android:textSize="24sp"/>
+        android:layout_marginTop="50dp"
+        android:text="Combien font"
+        android:textSize="24sp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -53,11 +61,10 @@
             android:id="@+id/valider"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
             android:layout_gravity="center"
-            android:text="VALIDER"
             android:onClick="valider"
-            />
+            android:text="QUESTION SUIVANTE"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/correction"
