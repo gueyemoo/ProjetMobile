@@ -780,6 +780,10 @@
         "source": "C:\\Users\\antoi\\.gradle\\caches\\transforms-2\\files-2.1\\2ad9bfadafd430f8dbad1412b3cf8d16\\appcompat-v7-28.0.0\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\antoi\\MIASHS\\GitProjetMob\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu_duel2.xml.flat",
+        "source": "C:\\Users\\antoi\\MIASHS\\GitProjetMob\\app\\src\\main\\res\\layout\\activity_menu_duel2.xml"
+    },
+    {
         "merged": "C:\\Users\\antoi\\MIASHS\\GitProjetMob\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\antoi\\.gradle\\caches\\transforms-2\\files-2.1\\2ad9bfadafd430f8dbad1412b3cf8d16\\appcompat-v7-28.0.0\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },

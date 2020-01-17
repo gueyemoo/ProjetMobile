@@ -25,7 +25,7 @@
 16-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:10:22-78
 17
 18    <application
-18-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:12:5-50:19
+18-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:12:5-53:19
 19        android:name="com.project.MobileProjet.MyApp"
 19-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:13:9-30
 20        android:allowBackup="true"
@@ -41,76 +41,86 @@
 25-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:17:9-54
 26        android:supportsRtl="true"
 26-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:18:9-35
-27        android:theme="@style/AppTheme" >
-27-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:19:9-40
-28        <activity android:name="com.project.MobileProjet.MenuDuelActivity" />
-28-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:20:9-63
-28-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:20:19-51
-29        <activity android:name="com.project.MobileProjet.MenuActivity" />
-29-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:21:9-50
-29-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:21:19-47
-30        <activity android:name="com.project.MobileProjet.MainActivity" />
-30-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:22:9-50
-30-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:22:19-47
-31        <activity android:name="com.project.MobileProjet.FrancaisActivity" />
-31-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:23:9-54
-31-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:23:19-51
-32        <activity android:name="com.project.MobileProjet.PenduActivity" />
-32-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:24:9-51
-32-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:24:19-48
-33        <activity android:name="com.project.MobileProjet.QuizActivity" />
-33-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:25:9-50
-33-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:25:19-47
-34        <activity android:name="com.project.MobileProjet.PaysActivity" />
-34-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:26:9-50
-34-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:26:19-47
-35        <activity
-35-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:27:9-29:52
-36            android:name="com.project.MobileProjet.AdditionActivity"
-36-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:28:13-45
-37            android:screenOrientation="portrait" />
-37-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:29:13-49
-38        <activity
-38-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:30:9-32:52
-39            android:name="com.project.MobileProjet.AddUserActivity"
-39-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:31:13-44
-40            android:screenOrientation="portrait" />
-40-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:32:13-49
-41        <activity
-41-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:33:9-35:52
-42            android:name="com.project.MobileProjet.ChoixTables"
-42-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:34:13-40
-43            android:screenOrientation="portrait" />
-43-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:35:13-49
-44        <activity
-44-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:36:9-38:52
-45            android:name="com.project.MobileProjet.MultiplicationsActivity"
-45-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:37:13-52
-46            android:screenOrientation="portrait" />
-46-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:38:13-49
-47        <activity android:name="com.project.MobileProjet.MathsActivity" />
-47-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:39:9-51
-47-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:39:19-48
-48        <activity android:name="com.project.MobileProjet.ChoixCategorieExerciceActivity" />
-48-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:40:9-68
-48-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:40:19-65
-49        <activity
-49-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:41:9-49:20
-50            android:name="com.project.MobileProjet.ActivitySplash"
-50-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:42:13-43
-51            android:screenOrientation="portrait" >
-51-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:43:13-49
-52            <intent-filter>
-52-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:44:13-48:29
-53                <action android:name="android.intent.action.MAIN" />
-53-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:45:17-69
-53-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:45:25-66
-54
-55                <category android:name="android.intent.category.LAUNCHER" />
-55-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:47:17-77
-55-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:47:27-74
-56            </intent-filter>
-57        </activity>
-58    </application>
-59
-60</manifest>
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme" >
+28-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:19:9-40
+29        <activity android:name="com.project.MobileProjet.MenuDuelActivity" />
+29-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:20:9-63
+29-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:20:19-51
+30        <activity android:name="com.project.MobileProjet.MenuActivity" />
+30-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:21:9-50
+30-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:21:19-47
+31        <activity android:name="com.project.MobileProjet.MainActivity" />
+31-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:22:9-50
+31-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:22:19-47
+32        <activity android:name="com.project.MobileProjet.FrancaisActivity" />
+32-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:23:9-54
+32-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:23:19-51
+33        <activity android:name="com.project.MobileProjet.PenduActivity" />
+33-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:24:9-51
+33-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:24:19-48
+34        <activity android:name="com.project.MobileProjet.QuizActivity" />
+34-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:25:9-50
+34-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:25:19-47
+35        <activity android:name="com.project.MobileProjet.PaysActivity" />
+35-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:26:9-50
+35-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:26:19-47
+36        <activity
+36-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:27:9-29:52
+37            android:name="com.project.MobileProjet.AdditionActivity"
+37-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:28:13-45
+38            android:screenOrientation="portrait" />
+38-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:29:13-49
+39        <activity
+39-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:30:9-32:52
+40            android:name="com.project.MobileProjet.AddUserActivity"
+40-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:31:13-44
+41            android:screenOrientation="portrait" />
+41-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:32:13-49
+42        <activity
+42-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:33:9-35:52
+43            android:name="com.project.MobileProjet.ChoixTables"
+43-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:34:13-40
+44            android:screenOrientation="portrait" />
+44-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:35:13-49
+45        <activity
+45-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:36:9-38:52
+46            android:name="com.project.MobileProjet.MultiplicationsActivity"
+46-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:37:13-52
+47            android:screenOrientation="portrait" />
+47-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:38:13-49
+48        <activity android:name="com.project.MobileProjet.MathsActivity" />
+48-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:39:9-51
+48-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:39:19-48
+49        <activity android:name="com.project.MobileProjet.ChoixCategorieExerciceActivity" />
+49-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:40:9-68
+49-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:40:19-65
+50        <activity
+50-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:41:9-49:20
+51            android:name="com.project.MobileProjet.ActivitySplash"
+51-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:42:13-43
+52            android:screenOrientation="portrait" >
+52-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:43:13-49
+53            <intent-filter>
+53-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:44:13-48:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:45:17-69
+54-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:45:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:47:17-77
+56-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:47:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity android:name="com.project.MobileProjet.ChoixCoursActivity" />
+59-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:50:9-55
+59-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:50:19-53
+60        <activity android:name="com.project.MobileProjet.CoursHTML" />
+60-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:51:9-46
+60-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:51:19-44
+61        <activity android:name="com.project.MobileProjet.CoursPDF" />
+61-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:52:9-45
+61-->C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:52:19-43
+62    </application>
+63
+64</manifest>
