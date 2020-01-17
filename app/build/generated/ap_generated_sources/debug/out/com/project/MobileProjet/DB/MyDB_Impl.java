@@ -31,13 +31,15 @@ public class MyDB_Impl extends MyDB {
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `users` (`pseudo` TEXT, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `age` INTEGER NOT NULL, `sexe` TEXT, `photo` INTEGER NOT NULL, `score` INTEGER NOT NULL)");
         _db.execSQL("CREATE UNIQUE INDEX `index_users_pseudo` ON `users` (`pseudo`)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `scoreDuels` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `idJ1` INTEGER NOT NULL, `idJ2` INTEGER NOT NULL, `exercice` TEXT, `scoreJ1` INTEGER NOT NULL, `scoreJ2` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"d2da471664063eb6135954ea53f9dca6\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"651dbfe7d4ca848982c71ff75c47689a\")");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `users`");
+        _db.execSQL("DROP TABLE IF EXISTS `scoreDuels`");
       }
 
       @Override
@@ -79,8 +81,24 @@ public class MyDB_Impl extends MyDB {
                   + " Expected:\n" + _infoUsers + "\n"
                   + " Found:\n" + _existingUsers);
         }
+        final HashMap<String, TableInfo.Column> _columnsScoreDuels = new HashMap<String, TableInfo.Column>(6);
+        _columnsScoreDuels.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
+        _columnsScoreDuels.put("idJ1", new TableInfo.Column("idJ1", "INTEGER", true, 0));
+        _columnsScoreDuels.put("idJ2", new TableInfo.Column("idJ2", "INTEGER", true, 0));
+        _columnsScoreDuels.put("exercice", new TableInfo.Column("exercice", "TEXT", false, 0));
+        _columnsScoreDuels.put("scoreJ1", new TableInfo.Column("scoreJ1", "INTEGER", true, 0));
+        _columnsScoreDuels.put("scoreJ2", new TableInfo.Column("scoreJ2", "INTEGER", true, 0));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysScoreDuels = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesScoreDuels = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoScoreDuels = new TableInfo("scoreDuels", _columnsScoreDuels, _foreignKeysScoreDuels, _indicesScoreDuels);
+        final TableInfo _existingScoreDuels = TableInfo.read(_db, "scoreDuels");
+        if (! _infoScoreDuels.equals(_existingScoreDuels)) {
+          throw new IllegalStateException("Migration didn't properly handle scoreDuels(com.project.MobileProjet.DB.ScoreDuel).\n"
+                  + " Expected:\n" + _infoScoreDuels + "\n"
+                  + " Found:\n" + _existingScoreDuels);
+        }
       }
-    }, "d2da471664063eb6135954ea53f9dca6", "5e1e077571d5e0f907032d4635901303");
+    }, "651dbfe7d4ca848982c71ff75c47689a", "0da6c2afec57dc7669eedc77d70fcdfb");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -91,7 +109,7 @@ public class MyDB_Impl extends MyDB {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "users");
+    return new InvalidationTracker(this, "users","scoreDuels");
   }
 
   @Override
@@ -101,6 +119,7 @@ public class MyDB_Impl extends MyDB {
     try {
       super.beginTransaction();
       _db.execSQL("DELETE FROM `users`");
+      _db.execSQL("DELETE FROM `scoreDuels`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();

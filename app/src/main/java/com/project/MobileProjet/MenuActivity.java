@@ -24,12 +24,14 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
-    public void goDuel(View view){
-        Intent intent = new Intent(this, MenuDuelActivity.class);
+    public void goDuel(View view) {
+
+        Intent intent = new Intent(this, SelectionProfilDuelActivity.class);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
         startActivity(intent);
+
     }
 
     public void goCours(View view) {
@@ -39,5 +41,4 @@ public class MenuActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
-
 }

@@ -754,13 +754,11 @@ drawable venezuela
 drawable worldwide
 id ALT
 id CTRL
-id CoursChoix
-id DuelChoix
-id ExerciceChoix
 id FUNCTION
 id META
 id SHIFT
 id SYM
+id SelectionSecondProfil
 id action0
 id action_bar
 id action_bar_activity_content
@@ -871,6 +869,7 @@ id linearLayout
 id listMode
 id listUsers
 id list_item
+id local
 id maths
 id media_actions
 id message
@@ -885,6 +884,7 @@ id notification_main_column
 id notification_main_column_container
 id nouvUser
 id np
+id online
 id packed
 id parent
 id parentPanel
@@ -892,10 +892,12 @@ id pdfView
 id pendu
 id percent
 id plus
+id profileOnline
 id progress_circular
 id progress_horizontal
 id pseudo
 id pseudo_id
+id question
 id question_en
 id question_rep
 id quizz
@@ -973,7 +975,7 @@ id titleDividerNoCustom
 id titleSplash
 id title_template
 id titre
-id titreMenu
+id titreDuels
 id titre_cours
 id top
 id topPanel
@@ -1034,8 +1036,6 @@ layout activity_jeu
 layout activity_main
 layout activity_maths
 layout activity_menu
-layout activity_menu_duel
-layout activity_menu_duel2
 layout activity_multiplications
 layout activity_pays
 layout activity_pendu

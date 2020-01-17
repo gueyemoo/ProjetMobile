@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-52:12
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\2ad9bfadafd430f8dbad1412b3cf8d16\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\cbc9fded8b0ca2dc6b55abe24b8dd624\recyclerview-v7-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\88180c2d9df321ed403965b1f5904015\constraint-layout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -38,39 +38,39 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\antoi\.g
 MERGED from [com.android.support:print:28.0.0] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\6649028815494b2aeabe1bc5c2405c56\print-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\5e2b7336b65fd01a7d1759b63ce95e82\viewmodel-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\5e443312ff8e9912636de42e05adc2a8\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml
 	android:versionName
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:5:5-30
 		INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-52:12
-		INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml
-	android:versionCode
-		INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml
 uses-feature#android.hardware.camera2
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:5:5-7:35
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:8:5-10:35
 	android:required
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:7:9-32
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:10:9-32
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:6:9-48
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:9:9-48
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:12:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:10:5-81
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:10:22-78
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:13:22-78
 application
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:12:5-50:19
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:15:5-57:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\88180c2d9df321ed403965b1f5904015\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\88180c2d9df321ed403965b1f5904015\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\f14724208b5bfeeef0d6bdefe649bca7\support-compat-28.0.0\AndroidManifest.xml:22:5-94
@@ -80,95 +80,107 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\antoi\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\antoi\.gradle\caches\transforms-2\files-2.1\f14724208b5bfeeef0d6bdefe649bca7\support-compat-28.0.0\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:19:9-41
 	android:roundIcon
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:20:9-54
 	android:icon
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:22:9-40
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:13:9-30
-activity#com.project.MobileProjet.MenuDuelActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:20:9-63
-	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:20:19-51
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:16:9-30
 activity#com.project.MobileProjet.MenuActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:21:9-50
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:23:9-50
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:23:19-47
 activity#com.project.MobileProjet.MainActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:22:9-50
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:24:9-50
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:22:19-47
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:24:19-47
 activity#com.project.MobileProjet.FrancaisActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:23:9-54
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:25:9-54
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:23:19-51
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:25:19-51
 activity#com.project.MobileProjet.PenduActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:24:9-51
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:26:9-51
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:24:19-48
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:26:19-48
 activity#com.project.MobileProjet.QuizActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:25:9-50
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:27:9-50
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:25:19-47
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:27:19-47
 activity#com.project.MobileProjet.PaysActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:26:9-50
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:28:9-50
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:26:19-47
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:28:19-47
+activity#com.project.MobileProjet.SelectionProfilDuelActivity
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:29:9-65
+	android:name
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:29:19-62
 activity#com.project.MobileProjet.AdditionActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:27:9-29:52
-	android:screenOrientation
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:29:13-49
-	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:28:13-45
-activity#com.project.MobileProjet.AddUserActivity
 ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:30:9-32:52
 	android:screenOrientation
 		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:32:13-49
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:31:13-44
-activity#com.project.MobileProjet.ChoixTables
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:31:13-45
+activity#com.project.MobileProjet.AddUserActivity
 ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:33:9-35:52
 	android:screenOrientation
 		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:35:13-49
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:34:13-40
-activity#com.project.MobileProjet.MultiplicationsActivity
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:34:13-44
+activity#com.project.MobileProjet.ChoixTables
 ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:36:9-38:52
 	android:screenOrientation
 		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:38:13-49
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:37:13-52
-activity#com.project.MobileProjet.MathsActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:39:9-51
-	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:39:19-48
-activity#com.project.MobileProjet.ChoixCategorieExerciceActivity
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:40:9-68
-	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:40:19-65
-activity#com.project.MobileProjet.ActivitySplash
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:41:9-49:20
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:37:13-40
+activity#com.project.MobileProjet.MultiplicationsActivity
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:39:9-41:52
 	android:screenOrientation
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:43:13-49
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:41:13-49
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:42:13-43
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:40:13-52
+activity#com.project.MobileProjet.MathsActivity
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:42:9-51
+	android:name
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:42:19-48
+activity#com.project.MobileProjet.ChoixCategorieExerciceActivity
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:43:9-68
+	android:name
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:43:19-65
+activity#com.project.MobileProjet.ActivitySplash
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:45:9-53:20
+	android:screenOrientation
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:47:13-49
+	android:name
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:46:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:44:13-48:29
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:48:13-52:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:45:17-69
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:49:17-69
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:45:25-66
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:49:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:47:17-77
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:51:17-77
 	android:name
-		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:47:27-74
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:51:27-74
+activity#com.project.MobileProjet.ChoixCoursActivity
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:54:9-55
+	android:name
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:54:19-53
+activity#com.project.MobileProjet.CoursHTML
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:55:9-46
+	android:name
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:55:19-44
+activity#com.project.MobileProjet.CoursPDF
+ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:56:9-45
+	android:name
+		ADDED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml:56:19-43
 uses-sdk
 INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\antoi\MIASHS\GitProjetMob\app\src\main\AndroidManifest.xml

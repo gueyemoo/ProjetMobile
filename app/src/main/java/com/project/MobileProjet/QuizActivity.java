@@ -1,6 +1,7 @@
 package com.project.MobileProjet;
 
 import com.project.MobileProjet.DB.DBClient;
+import com.project.MobileProjet.DB.ScoreDuel;
 import com.project.MobileProjet.model.QuestionQuiz;
 import android.content.Intent;
 import android.content.res.ColorStateList;
@@ -60,10 +61,20 @@ public class QuizActivity extends AppCompatActivity {
 
     private long backPressedTime;
 
+    private int joueurActuel = 0;
+    private boolean duel;
+    private String pseudo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+        duel = getIntent().getBooleanExtra("duel",false);
+        if(duel)
+        {
+            joueurActuel = getIntent().getIntExtra("joueurActuel",1);
+            pseudo = getIntent().getStringExtra("nickname");
+        }
 
         mDb = DBClient.getInstance(getApplicationContext());
 
@@ -128,8 +139,15 @@ public class QuizActivity extends AppCompatActivity {
 
         if (questionCounter < questionCountTotal) {
             currentQuestionQuiz = questionQuizList.get(questionCounter);
+            if(duel)
+            {
+                textViewQuestion.setText("Question pour " + pseudo + " ! " + currentQuestionQuiz.getQuestion());
+            }
+            else
+            {
+                textViewQuestion.setText(currentQuestionQuiz.getQuestion());
+            }
 
-            textViewQuestion.setText(currentQuestionQuiz.getQuestion());
             rb1.setText(currentQuestionQuiz.getOption1());
             rb2.setText(currentQuestionQuiz.getOption2());
             rb3.setText(currentQuestionQuiz.getOption3());
@@ -217,16 +235,41 @@ public class QuizActivity extends AppCompatActivity {
         if (questionCounter < questionCountTotal) {
             buttonConfirmNext.setText("Suivante");
         } else {
-            buttonConfirmNext.setText("RETOUR AUX JEUX");
+            if(!duel || joueurActuel == 2 )
+            {
+                buttonConfirmNext.setText("RETOUR AUX JEUX");
+            }
+
         }
     }
 
     private void finishQuiz() {
-        saveScore(score);
-        Intent resultIntent = new Intent();
-        resultIntent.putExtra(EXTRA_SCORE, score);
-        setResult(RESULT_OK, resultIntent);
-        finish();
+        if(duel)
+        {
+            if(joueurActuel == 2)
+            {
+                saveScoreDuel("quiz",((MyApp) this.getApplication()).getScore(),score);
+                Intent intent = new Intent(this,ChoixCategorieExerciceActivity.class);
+                intent.putExtra("duel",true);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+            }
+            else
+            {
+                ((MyApp) QuizActivity.this.getApplication()).setScore(score);
+                finish();
+            }
+        }
+        else
+        {
+            saveScore(score);
+            Intent resultIntent = new Intent();
+            resultIntent.putExtra(EXTRA_SCORE, score);
+            setResult(RESULT_OK, resultIntent);
+            finish();
+        }
+
     }
 
     @Override
@@ -282,5 +325,29 @@ public class QuizActivity extends AppCompatActivity {
 
         SaveScore st = new SaveScore();
         st.execute();
+    }
+
+    private void saveScoreDuel(final String exercice, final int scoreJ1, final int scoreJ2)
+    {
+        final int userIdJ1 = ((MyApp) this.getApplication()).getId();
+        final int userIdJ2 = ((MyApp) this.getApplication()).getIdJ2();
+
+        class SaveScoreDuel extends AsyncTask < Void, Void, Boolean > {
+
+            @Override
+            protected Boolean doInBackground(Void...voids) {
+
+                // adding to database
+                mDb.getAppDatabase()
+                        .mydao()
+                        .addScoreDuel(new ScoreDuel(userIdJ1, userIdJ2, scoreJ1, scoreJ2));
+
+                return true;
+            }
+
+        }
+        SaveScoreDuel sSD = new SaveScoreDuel();
+        sSD.execute();
+
     }
 }
