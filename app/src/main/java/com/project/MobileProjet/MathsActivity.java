@@ -31,9 +31,15 @@ public class MathsActivity extends AppCompatActivity {
     public void mul(View view) {
 
         Intent intent = new Intent(this,ChoixTables.class);
+        if(duel)
+        {
 
+             intent.putExtra("duel",true);
+             intent.putExtra("nicknameP1",nicknameP1);
+             intent.putExtra("nicknameP2",nicknameP2);
+
+        }
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
         startActivity(intent);
 
     }

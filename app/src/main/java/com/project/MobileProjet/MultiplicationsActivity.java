@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.project.MobileProjet.DB.DBClient;
+import com.project.MobileProjet.DB.ScoreDuel;
 import com.project.MobileProjet.R;
 import com.project.MobileProjet.model.Multiplication;
 import com.project.MobileProjet.model.TableMultiplication;
@@ -30,12 +31,24 @@ public class MultiplicationsActivity extends AppCompatActivity {
     // VIEW
     LinearLayout linear;
 
+    private int joueurActuel = 0;
+    private boolean duel;
+    private String pseudo;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multiplications);
         table = getIntent().getIntExtra(TABLE_KEY,0);
+        duel = getIntent().getBooleanExtra("duel",false);
+        if(duel)
+        {
+            joueurActuel = getIntent().getIntExtra("joueurActuel",1);
+            pseudo = getIntent().getStringExtra("nickname");
+        }
 
         mDb = DBClient.getInstance(getApplicationContext());
 
@@ -48,7 +61,21 @@ public class MultiplicationsActivity extends AppCompatActivity {
 
         // 3. Mettre à jour l'interface utilisateur
         miseAJourUI();
+
+        //4.Charger la question modifié en cas de duel
+        if(duel)
+        {
+            chargerQuestion();
+        }
     }
+
+    private void chargerQuestion()
+    {
+        final int userId;
+        final TextView question = findViewById(R.id.question);
+            question.setText("Au tour de " + pseudo + " ! ");
+    }
+
 
     //
     private void miseAJourUI() {
@@ -73,8 +100,7 @@ public class MultiplicationsActivity extends AppCompatActivity {
 
     }
 
-    public void valider(View view)
-    {
+    public void valider(View view) {
         Button choixJeu = (Button) findViewById(R.id.valider);
 
         TextView correction = (TextView) findViewById(R.id.correction);
@@ -86,18 +112,16 @@ public class MultiplicationsActivity extends AppCompatActivity {
 
             resultat.setFocusable(false);
 
-            if(resultat.getText().toString().equals(""))
-            {
+            if (resultat.getText().toString().equals("")) {
                 resultat.setText("0");
             }
 
-            if(Integer.parseInt(resultat.getText().toString()) != (multiplication.getOperande1()*multiplication.getOperande2())) {
+            if (Integer.parseInt(resultat.getText().toString()) != (multiplication.getOperande1() * multiplication.getOperande2())) {
                 resultat.setTextColor(Color.parseColor("#FF0000"));
-                reponse.setText("Réponse : " + multiplication.getOperande1()*multiplication.getOperande2());
+                reponse.setText("Réponse : " + multiplication.getOperande1() * multiplication.getOperande2());
                 reponse.setTextColor(Color.parseColor("#008000"));
                 nbErreurs++;
-            }
-            else {
+            } else {
                 resultat.setTextColor(Color.parseColor("#008000"));
             }
 
@@ -106,22 +130,68 @@ public class MultiplicationsActivity extends AppCompatActivity {
 
         }
 
-            correction.setText("Score: " + (10-nbErreurs) + " " + "/ 10");
-             correction.setTextColor(Color.parseColor("#008000"));
+        if(duel && joueurActuel == 1) {
+            ((MyApp) this.getApplication()).setScore(10 - nbErreurs);
+        }
+        validerSaisiesJoueur();
+    }
 
-        saveScore(10-nbErreurs);
+    private void validerSaisiesJoueur()
+    {
+        Button choixJeu = (Button) findViewById(R.id.valider);
 
-        choixJeu.setText("RETOUR AUX JEUX");
+        TextView correction = (TextView) findViewById(R.id.correction);
 
-        choixJeu.setOnClickListener( new OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), ChoixCategorieExerciceActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+        if(duel)
+        {
+
+            if(joueurActuel == 2)
+            {
+                choixJeu.setText("TETS");
+                saveScoreDuel("multiplication",((MyApp) this.getApplication()).getScore(),10-nbErreurs);
+                ((MyApp) MultiplicationsActivity.this.getApplication()).setScore(10-nbErreurs);
+                choixJeu.setOnClickListener( new OnClickListener() {
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), ChoixCategorieExerciceActivity.class);
+                        intent.putExtra("duel",true);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                    }
+                });
+            }else{
+                ((MyApp) this.getApplication()).setScore(10-nbErreurs);
+                choixJeu.setText("Au tour de " + pseudo);
+                choixJeu.setOnClickListener( new OnClickListener() {
+                    public void onClick(View v) {
+                        finish();
+                    }
+                });
+
             }
-        });
+        }
+        else
+        {
+            saveScore(10-nbErreurs);
+
+            choixJeu.setText("RETOUR AUX JEUX");
+
+            choixJeu.setOnClickListener( new OnClickListener() {
+                public void onClick(View v) {
+                    Intent intent = new Intent(v.getContext(), ChoixCategorieExerciceActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+            });
+            correction.setText("Score: " + (10-nbErreurs) + " " + "/ 10");
+            correction.setTextColor(Color.parseColor("#008000"));
+        }
 
     }
+
+
+
+
+
 
 
     private void saveScore(final int score) {
@@ -149,6 +219,30 @@ public class MultiplicationsActivity extends AppCompatActivity {
 
         SaveScore st = new SaveScore();
         st.execute();
+    }
+
+    private void saveScoreDuel(final String exercice, final int scoreJ1, final int scoreJ2)
+    {
+        final int userIdJ1 = ((MyApp) this.getApplication()).getId();
+        final int userIdJ2 = ((MyApp) this.getApplication()).getIdJ2();
+
+        class SaveScoreDuel extends AsyncTask < Void, Void, Boolean > {
+
+            @Override
+            protected Boolean doInBackground(Void...voids) {
+
+                // adding to database
+                mDb.getAppDatabase()
+                        .mydao()
+                        .addScoreDuel(new ScoreDuel(userIdJ1, userIdJ2, scoreJ1, scoreJ2));
+
+                return true;
+            }
+
+        }
+        SaveScoreDuel sSD = new SaveScoreDuel();
+        sSD.execute();
+
     }
 
 
