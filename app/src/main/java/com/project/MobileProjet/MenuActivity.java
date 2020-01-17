@@ -26,7 +26,7 @@ public class MenuActivity extends AppCompatActivity {
 
     public void goDuel(View view) {
 
-        Intent intent = new Intent(this, MenuDuelActivity.class);
+        Intent intent = new Intent(this, SelectionProfilDuelActivity.class);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 

@@ -25,7 +25,7 @@
 16-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:13:22-78
 17
 18    <application
-18-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:15:5-55:19
+18-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:15:5-54:19
 19        android:name="com.project.MobileProjet.MyApp"
 19-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:16:9-30
 20        android:allowBackup="true"
@@ -44,77 +44,74 @@
 27        android:testOnly="true"
 28        android:theme="@style/AppTheme" >
 28-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:22:9-40
-29        <activity android:name="com.project.MobileProjet.MenuDuelActivity" />
-29-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:23:9-63
-29-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:23:19-51
-30        <activity android:name="com.project.MobileProjet.MenuActivity" />
+29        <activity android:name="com.project.MobileProjet.MenuActivity" />
+29-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:23:9-50
+29-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:23:19-47
+30        <activity android:name="com.project.MobileProjet.MainActivity" />
 30-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:24:9-50
 30-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:24:19-47
-31        <activity android:name="com.project.MobileProjet.MainActivity" />
-31-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:25:9-50
-31-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:25:19-47
-32        <activity android:name="com.project.MobileProjet.FrancaisActivity" />
-32-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:26:9-54
-32-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:26:19-51
-33        <activity android:name="com.project.MobileProjet.PenduActivity" />
-33-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:27:9-51
-33-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:27:19-48
-34        <activity android:name="com.project.MobileProjet.QuizActivity" />
+31        <activity android:name="com.project.MobileProjet.FrancaisActivity" />
+31-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:25:9-54
+31-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:25:19-51
+32        <activity android:name="com.project.MobileProjet.PenduActivity" />
+32-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:26:9-51
+32-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:26:19-48
+33        <activity android:name="com.project.MobileProjet.QuizActivity" />
+33-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:27:9-50
+33-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:27:19-47
+34        <activity android:name="com.project.MobileProjet.PaysActivity" />
 34-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:28:9-50
 34-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:28:19-47
-35        <activity android:name="com.project.MobileProjet.PaysActivity" />
-35-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:29:9-50
-35-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:29:19-47
-36        <activity android:name="com.project.MobileProjet.SelectionProfilDuelActivity" />
-36-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:30:9-65
-36-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:30:19-62
-37        <activity
-37-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:31:9-33:52
-38            android:name="com.project.MobileProjet.AdditionActivity"
-38-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:32:13-45
-39            android:screenOrientation="portrait" />
-39-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:33:13-49
-40        <activity
-40-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:34:9-36:52
-41            android:name="com.project.MobileProjet.AddUserActivity"
-41-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:35:13-44
-42            android:screenOrientation="portrait" />
-42-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:36:13-49
-43        <activity
-43-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:37:9-39:52
-44            android:name="com.project.MobileProjet.ChoixTables"
-44-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:38:13-40
-45            android:screenOrientation="portrait" />
-45-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:39:13-49
-46        <activity
-46-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:40:9-42:52
-47            android:name="com.project.MobileProjet.MultiplicationsActivity"
-47-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:41:13-52
-48            android:screenOrientation="portrait" />
-48-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:42:13-49
-49        <activity android:name="com.project.MobileProjet.MathsActivity" />
-49-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:43:9-51
-49-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:43:19-48
-50        <activity android:name="com.project.MobileProjet.ChoixCategorieExerciceActivity" />
-50-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:44:9-68
-50-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:44:19-65
-51        <activity
-51-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:46:9-54:20
-52            android:name="com.project.MobileProjet.ActivitySplash"
-52-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:47:13-43
-53            android:screenOrientation="portrait" >
-53-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:48:13-49
-54            <intent-filter>
-54-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:49:13-53:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:50:17-69
-55-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:50:25-66
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-57-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:52:17-77
-57-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:52:27-74
-58            </intent-filter>
-59        </activity>
-60    </application>
-61
-62</manifest>
+35        <activity android:name="com.project.MobileProjet.SelectionProfilDuelActivity" />
+35-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:29:9-65
+35-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:29:19-62
+36        <activity
+36-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:30:9-32:52
+37            android:name="com.project.MobileProjet.AdditionActivity"
+37-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:31:13-45
+38            android:screenOrientation="portrait" />
+38-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:32:13-49
+39        <activity
+39-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:33:9-35:52
+40            android:name="com.project.MobileProjet.AddUserActivity"
+40-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:34:13-44
+41            android:screenOrientation="portrait" />
+41-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:35:13-49
+42        <activity
+42-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:36:9-38:52
+43            android:name="com.project.MobileProjet.ChoixTables"
+43-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:37:13-40
+44            android:screenOrientation="portrait" />
+44-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:38:13-49
+45        <activity
+45-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:39:9-41:52
+46            android:name="com.project.MobileProjet.MultiplicationsActivity"
+46-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:40:13-52
+47            android:screenOrientation="portrait" />
+47-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:41:13-49
+48        <activity android:name="com.project.MobileProjet.MathsActivity" />
+48-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:42:9-51
+48-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:42:19-48
+49        <activity android:name="com.project.MobileProjet.ChoixCategorieExerciceActivity" />
+49-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:43:9-68
+49-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:43:19-65
+50        <activity
+50-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:45:9-53:20
+51            android:name="com.project.MobileProjet.ActivitySplash"
+51-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:46:13-43
+52            android:screenOrientation="portrait" >
+52-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:47:13-49
+53            <intent-filter>
+53-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:48:13-52:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:49:17-69
+54-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:49:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:51:17-77
+56-->D:\Programmation\Android\ProjetMobile\app\src\main\AndroidManifest.xml:51:27-74
+57            </intent-filter>
+58        </activity>
+59    </application>
+60
+61</manifest>

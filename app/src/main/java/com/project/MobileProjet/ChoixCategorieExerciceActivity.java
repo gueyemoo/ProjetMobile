@@ -4,6 +4,7 @@ package com.project.MobileProjet;
 import android.content.Intent;
 
 import android.os.AsyncTask;
+import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,14 +40,36 @@ public class ChoixCategorieExerciceActivity extends AppCompatActivity {
         {
             ((MyApp) this.getApplication()).setNbOpeJ2(0);
             loadNicknames();
+
         }
         ((MyApp) this.getApplication()).setNbOpe(0);
     }
 
     public void goQuizz(View view) {
 
-        Intent intent = new Intent(this, QuizActivity.class);
-        startActivityForResult(intent, REQUEST_CODE_QUIZ);
+        if(duel)
+        {
+            Intent intentP1 = new Intent(this,QuizActivity.class);
+            Intent intentP2 = new Intent(this,QuizActivity.class);
+            intentP1.putExtra("duel",true);
+            intentP2.putExtra("duel",true);
+            intentP1.putExtra("nickname",nicknameP1);
+            intentP2.putExtra("nickname",nicknameP2);
+            intentP2.putExtra("joueurActuel",2);
+            intentP1.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            intentP2.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            TaskStackBuilder.create(this)
+                    .addNextIntent( intentP2 )
+                    .addNextIntentWithParentStack( intentP1 )
+                    .startActivities();
+        }
+        else
+        {
+            Intent intent = new Intent(this, QuizActivity.class);
+            startActivityForResult(intent, REQUEST_CODE_QUIZ);
+        }
+
+
 
     }
 

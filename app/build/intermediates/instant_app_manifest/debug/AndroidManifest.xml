@@ -27,7 +27,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.project.MobileProjet.MenuDuelActivity" />
         <activity android:name="com.project.MobileProjet.MenuActivity" />
         <activity android:name="com.project.MobileProjet.MainActivity" />
         <activity android:name="com.project.MobileProjet.FrancaisActivity" />

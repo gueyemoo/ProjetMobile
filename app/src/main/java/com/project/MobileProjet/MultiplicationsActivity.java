@@ -147,7 +147,7 @@ public class MultiplicationsActivity extends AppCompatActivity {
 
             if(joueurActuel == 2)
             {
-                choixJeu.setText("TETS");
+                choixJeu.setText("RETOUR AUX EXERCICES");
                 saveScoreDuel("multiplication",((MyApp) this.getApplication()).getScore(),10-nbErreurs);
                 ((MyApp) MultiplicationsActivity.this.getApplication()).setScore(10-nbErreurs);
                 choixJeu.setOnClickListener( new OnClickListener() {
