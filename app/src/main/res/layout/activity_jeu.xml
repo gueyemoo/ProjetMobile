@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:layout_gravity="center_horizontal"
-        android:text="Salut, que veux tu faire ?" />
+        android:text="Salut, que veux-tu faire ?" />
 
 
     <ScrollView
@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Calcul"
+                android:text="Calculs"
                 android:textSize="30dp"
                 android:layout_marginBottom="25dp"></TextView>
 

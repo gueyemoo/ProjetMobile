@@ -142,7 +142,7 @@ public class FrancaisActivity extends AppCompatActivity {
                     bouton_continuer.setVisibility(View.VISIBLE);
                     commentaire.setVisibility(View.VISIBLE);
                     reponse.setEnabled(false);
-                    commentaire.setText("BRAVO ! Tu maitrises toutes les figures de style !");
+                    commentaire.setText("BRAVO ! Tu maîtrises toutes les figures de style !");
                     saveScore(score);
                     bouton_continuer.setText("Retour Choix Catégorie");
                     bouton_continuer.setOnClickListener(new View.OnClickListener() {
@@ -164,7 +164,7 @@ public class FrancaisActivity extends AppCompatActivity {
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             finish();
         } else {
-            Toast.makeText(this, "Appuyer de nouveau pour quitter", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Appuie de nouveau pour quitter", Toast.LENGTH_SHORT).show();
         }
 
         backPressedTime = System.currentTimeMillis();
@@ -173,7 +173,7 @@ public class FrancaisActivity extends AppCompatActivity {
 
 
     private void instruction() { //Cette fonction affiche les instructions de l'exercice
-        String htmlString = "<u>INSTRUCTION:</u> Dans cet exercice il faut trouver le <font color=\"red\">VERBE</font> utiliser et l'écrire à l'indicatif.";
+        String htmlString = "<u>INSTRUCTION:</u> Dans cet exercice tu dois  trouver le <font color=\"red\">VERBE</font> utilisé et l'écrire à l'infinitif.";
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(FrancaisActivity.this);
         alertDialogBuilder.setMessage(Html.fromHtml(htmlString)).setCancelable(false).setPositiveButton("Compris",
                 new DialogInterface.OnClickListener() {

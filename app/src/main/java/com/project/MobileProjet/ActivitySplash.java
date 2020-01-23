@@ -20,9 +20,7 @@ public class ActivitySplash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        mTitle = findViewById(R.id.tile1);
 
-        mTitle.setText("Fun & Learn");
         //This is additional feature, used to run a progress bar
         splashProgress = findViewById(R.id.splashProgress);
         playProgress();

@@ -24,7 +24,7 @@ public class CoursPDF extends AppCompatActivity {
         coursChoisi = getIntent().getExtras().getString("cours");
         switch (coursChoisi) {
             case "orthographe" :
-                titre.setText("Leçon d'Orthoographe");
+                titre.setText("Leçon d'Orthographe");
                 pdfView.fromAsset("coursOrth.pdf").defaultPage(1).showMinimap(false).enableSwipe(true).load();
                 break;
             case "conjugaison" :

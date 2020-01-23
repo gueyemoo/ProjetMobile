@@ -122,7 +122,7 @@ public class QuizActivity extends AppCompatActivity {
                     if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked()) {
                         checkAnswer();
                     } else {
-                        Toast.makeText(QuizActivity.this, "Sélectionnes une réponse", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuizActivity.this, "Sélectionne une réponse", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     showNextQuestion();
@@ -233,7 +233,7 @@ public class QuizActivity extends AppCompatActivity {
         }
 
         if (questionCounter < questionCountTotal) {
-            buttonConfirmNext.setText("Suivante");
+            buttonConfirmNext.setText("Suivant");
         } else {
             if(!duel || joueurActuel == 2 )
             {
@@ -258,6 +258,11 @@ public class QuizActivity extends AppCompatActivity {
             else
             {
                 ((MyApp) QuizActivity.this.getApplication()).setScore(score);
+                Intent intentP2 = new Intent(this,QuizActivity.class);
+                intentP2.putExtra("nickname",getIntent().getStringExtra("nicknameP2"));
+                intentP2.putExtra("joueurActuel",2);
+                intentP2.putExtra("duel",true);
+                startActivity(intentP2);
                 finish();
             }
         }
@@ -277,7 +282,7 @@ public class QuizActivity extends AppCompatActivity {
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             finishQuiz();
         } else {
-            Toast.makeText(this, "Appuyer de nouveau pour quitter", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Appuie de nouveau pour quitter", Toast.LENGTH_SHORT).show();
         }
 
         backPressedTime = System.currentTimeMillis();

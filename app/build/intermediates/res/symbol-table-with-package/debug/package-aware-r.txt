@@ -963,12 +963,12 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id text_cours
 id text_view_countdown
 id text_view_question
 id text_view_question_count
 id text_view_score
-id tile1
 id time
 id title
 id titleDividerNoCustom

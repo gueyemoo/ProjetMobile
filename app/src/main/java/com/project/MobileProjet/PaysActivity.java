@@ -151,7 +151,7 @@ public class PaysActivity extends AppCompatActivity {
 
 
     private void instruction(){ //Cette fonction affiche les instructions de l'exercice
-        String htmlString ="<u>INSTRUCTION:</u> Dans cet exercice il faut trouver le nom du pays correspondant à l'image <font color=\"red\">ATTENTION</font> au espace à la fin du mot et il ne faut pas mettre les accents sur les 'e'.";
+        String htmlString ="<u>INSTRUCTION:</u> Dans cet exercice tu dois trouver le nom du pays correspondant au drapeau <font color=\"red\">ATTENTION</font> aux espaces à la fin des mots. Ce n'est pas grave si tu oublies les accents sur les 'e'.";
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(PaysActivity.this);
         alertDialogBuilder.setMessage(Html.fromHtml(htmlString)).setCancelable(false).setPositiveButton("Compris",
                 new DialogInterface.OnClickListener() {
@@ -169,7 +169,7 @@ public class PaysActivity extends AppCompatActivity {
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             finish();
         } else {
-            Toast.makeText(this, "Appuyer de nouveau pour quitter", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Appuie de nouveau pour quitter", Toast.LENGTH_SHORT).show();
         }
 
         backPressedTime = System.currentTimeMillis();

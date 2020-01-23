@@ -24,17 +24,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-        <TextView
-            android:id="@+id/tile1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fun and Learn"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
-        <TextView
+
+            <TextView
             android:id="@+id/titleSplash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

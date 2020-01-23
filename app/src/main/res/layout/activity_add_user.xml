@@ -45,27 +45,27 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="319dp"
+        android:layout_width="369dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="21sp"
             android:layout_gravity="center"
-            android:text="Age : " />
+            android:text="Age : "
+            android:textSize="21sp" />
 
         <NumberPicker
             android:id="@+id/age"
             android:layout_width="wrap_content"
-            android:theme="@style/AppTheme.Picker"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:background="@android:color/darker_gray"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:theme="@style/AppTheme.Picker" />
 
         <LinearLayout
             android:layout_width="192dp"
@@ -76,13 +76,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="21sp"
                 android:layout_gravity="center"
-                android:text="Je suis : " />
+                android:text="Je suis : "
+                android:textSize="21sp" />
 
-            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            <RadioGroup
                 android:id="@+id/sexe"
-                android:layout_width="107dp"
+                android:layout_width="132dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="50dp"
@@ -93,15 +93,15 @@
                     android:id="@+id/garcon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="21sp"
-                    android:text="Garçon" />
+                    android:text="garçon"
+                    android:textSize="21sp" />
 
                 <RadioButton
                     android:id="@+id/fille"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="21sp"
-                    android:text="Fille" />
+                    android:text="fille"
+                    android:textSize="21sp" />
 
 
             </RadioGroup>

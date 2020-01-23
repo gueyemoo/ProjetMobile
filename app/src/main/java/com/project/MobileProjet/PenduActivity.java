@@ -175,11 +175,11 @@ public class PenduActivity extends AppCompatActivity implements View.OnClickList
 
     public void createDialog(boolean win){ //Message de fin de partie à afficher
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Vous avez gagné");
+        builder.setTitle("Tu as gagné");
 
         if(!win){
-            builder.setTitle("Vous avez perdu !");
-            builder.setMessage("Le bon mot était: " + word);
+            builder.setTitle("Tu as perdu !");
+            builder.setMessage("Le bon mot était : " + word);
         }else{
             saveScore(10);
         }
@@ -189,7 +189,7 @@ public class PenduActivity extends AppCompatActivity implements View.OnClickList
             public void onClick(DialogInterface dialog, int which) {
                 initGame(); //on réinitialise la partie
             }
-        }).setNegativeButton("Retour Choix Catégorie",
+        }).setNegativeButton("Retour aux exercices.",
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -226,7 +226,7 @@ public class PenduActivity extends AppCompatActivity implements View.OnClickList
         if (backPressedTime + 2000 > System.currentTimeMillis()) {
             finish();
         } else {
-            Toast.makeText(this, "Appuyer de nouveau pour quitter", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Appuie de nouveau pour quitter", Toast.LENGTH_SHORT).show();
         }
 
         backPressedTime = System.currentTimeMillis();
@@ -260,7 +260,7 @@ public class PenduActivity extends AppCompatActivity implements View.OnClickList
 
 
     private void instruction(){ //Cette fonction affiche les instructions de l'exercice
-        String htmlString ="<u>INSTRUCTION:</u> Dans cet exercice il faut deviner le bon mot <font color=\"red\">ATTENTION</font> à chaque erreur un membre du pendu se mets en place. Chaque mot deviner rapporte 10 points.";
+        String htmlString ="<u>INSTRUCTION:</u> Dans cet exercice il faut deviner le bon mot en un minimum de coup. <font color=\"red\">ATTENTION</font>, à chaque erreur un membre du pendu se met en place. Chaque mot deviné rapporte 10 points.";
         android.app.AlertDialog.Builder alertDialogBuilder = new android.app.AlertDialog.Builder(PenduActivity.this);
         alertDialogBuilder.setMessage(Html.fromHtml(htmlString)).setCancelable(false).setPositiveButton("Compris",
                 new DialogInterface.OnClickListener() {

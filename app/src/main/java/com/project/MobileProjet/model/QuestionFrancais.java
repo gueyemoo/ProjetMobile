@@ -3,13 +3,13 @@ package com.project.MobileProjet.model;
 public class QuestionFrancais {
 
     public static String[] questions = {
-            "Je suis petit",
-            "Comment tu t'appel ?",
+            "Je suis petit.",
+            "Comment tu t'appelles ?",
             "Tu as la même carte que moi !",
             "Je les hais !",
-            "Je ne faisais que ça auparavant.",
+            "Je ne faisais que cela auparavant.",
             "Ne nous projetons pas aussi vite.",
-            "Un crane lisse et luisant.",
+            "Un crâne lisse et luisant.",
             "Le cuisinier s'approvisionnait ailleurs.",
             "Le chat mange la souris.",
             "Pascal étudie l'anglais.",
@@ -17,7 +17,7 @@ public class QuestionFrancais {
             "La terre tourne tout le temps.",
             "Les enfants grandissent beaucoup trop vite.",
             "Il fût fort à une époque.",
-            "Réflechis bien à mon offre.",
+            "Réfléchis bien à mon offre.",
             "Nous tirerons la corde une fois en haut."
     };
 

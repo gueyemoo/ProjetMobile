@@ -50,20 +50,17 @@ public class ChoixCategorieExerciceActivity extends AppCompatActivity {
         if(duel)
         {
             Intent intentP1 = new Intent(this,QuizActivity.class);
-            Intent intentP2 = new Intent(this,QuizActivity.class);
+
+
             intentP1.putExtra("duel",true);
-            intentP2.putExtra("duel",true);
+
             intentP1.putExtra("nickname",nicknameP1);
-            intentP2.putExtra("nickname",nicknameP2);
-            intentP2.putExtra("joueurActuel",2);
+            intentP1.putExtra("nicknameP2",nicknameP2);
             intentP1.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             intentP1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             //intentP2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            intentP2.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-            TaskStackBuilder.create(this)
-                    .addNextIntent( intentP2 )
-                    .addNextIntentWithParentStack( intentP1 )
-                    .startActivities();
+            //intentP2.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            startActivity(intentP1);
         }
         else
         {

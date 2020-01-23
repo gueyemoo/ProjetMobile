@@ -9,13 +9,23 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="BIENVENUE SUR "
+        android:textColor="#FFF"
+        android:textSize="28sp" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textSize="28sp"
         android:textColor="#FFF"
         android:layout_gravity="center_horizontal"
-        android:text="BIENVENUE SUR ILearn" />
+        android:text="L'école des Loustiques." />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,16 +34,8 @@
         android:textSize="21sp"
         android:textColor="#FF0"
         android:layout_gravity="center_horizontal"
-        android:text="Clic sur un profil ou inscris toi." />
+        android:text="Clique sur un profil ou inscris-toi." />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_gravity="center_horizontal"
-        android:text="Pour actualiser les scores : \nswipe vers le bas sur les profils"
-        android:textColor="#FF0"
-        android:textSize="23sp" />
 
 
     <LinearLayout

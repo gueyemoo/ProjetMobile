@@ -51,7 +51,7 @@
         android:layout_marginRight="8dp"
         android:ems="15"
         android:gravity="center"
-        android:hint="reponse"
+        android:hint="réponse"
         android:inputType="textPersonName"
         android:textSize="24dp"
         app:layout_constraintBottom_toTopOf="@+id/commentaire_pays"

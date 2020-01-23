@@ -15,7 +15,7 @@
         android:layout_marginLeft="30dp"
         android:textSize="24sp"
         android:gravity="center"
-        android:text="Choisis la table de multiplication"
+        android:text="Choisis une table de multiplication"
         />
 
     <NumberPicker
