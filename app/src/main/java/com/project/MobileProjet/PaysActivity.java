@@ -63,7 +63,7 @@ public class PaysActivity extends AppCompatActivity {
 
         list = new ArrayList<>();
 
-        int max = DonneePays.drapeaux.length;
+        int max = 10;
         score.setText("Question: "+i+"/"+ max );
 
         //on ajoute tout les drapeaux à la liste
@@ -87,12 +87,12 @@ public class PaysActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if(reponse.getText().toString().equalsIgnoreCase(list.get(curQuestions).getNom())){
 
-                    bouton_continuer.setVisibility(View.VISIBLE);
+                    //bouton_continuer.setVisibility(View.VISIBLE);
                     commentaire.setVisibility(View.VISIBLE);
                     commentaire.setText("Bravo !");
                     commentaire.setTextColor(Color.GREEN);
                 }else{
-                    bouton_continuer.setVisibility(View.INVISIBLE);
+                    //bouton_continuer.setVisibility(View.INVISIBLE);
                     commentaire.setVisibility(View.INVISIBLE);
                 }
             }
@@ -122,7 +122,7 @@ public class PaysActivity extends AppCompatActivity {
                 if (curQuestions < DonneePays.drapeaux.length - 1) {
                     curQuestions++;
                     drapeau.setImageResource(list.get(curQuestions).getImages());
-                    bouton_continuer.setVisibility(View.INVISIBLE);
+                    //bouton_continuer.setVisibility(View.INVISIBLE);
                     commentaire.setVisibility(View.INVISIBLE);
                     reponse.setText("");
                     commentaire.setText("");
@@ -134,7 +134,7 @@ public class PaysActivity extends AppCompatActivity {
                     reponse.setEnabled(false);
                     saveScore(i);
                     commentaire.setText("BRAVO ! Tu as trouvé tout les pays !");
-                    bouton_continuer.setText("Retour Choix Catégorie");
+                    bouton_continuer.setText("Retour aux exercices");
                     bouton_continuer.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {

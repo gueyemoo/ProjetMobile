@@ -50,6 +50,7 @@ public class ChoixTables extends AppCompatActivity {
             intentP1.putExtra("duel",true);
             intentP2.putExtra("duel",true);
             intentP1.putExtra("nickname",nicknameP1);
+            intentP1.putExtra("nicknameP2",nicknameP2);
             intentP2.putExtra("nickname",nicknameP2);
             intentP2.putExtra("joueurActuel",2);
             intentP1.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);

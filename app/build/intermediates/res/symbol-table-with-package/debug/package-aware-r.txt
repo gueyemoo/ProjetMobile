@@ -988,6 +988,7 @@ id uniform
 id up
 id useLogo
 id valider
+id welcome
 id withText
 id word_container
 id wrap

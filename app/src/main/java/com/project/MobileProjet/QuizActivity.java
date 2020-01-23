@@ -100,7 +100,7 @@ public class QuizActivity extends AppCompatActivity {
             showNextQuestion();
         } else {
             questionQuizList = savedInstanceState.getParcelableArrayList(KEY_QUESTION_LIST);
-            questionCountTotal = questionQuizList.size();
+            questionCountTotal = 10;
             questionCounter = savedInstanceState.getInt(KEY_QUESTION_COUNT);
             currentQuestionQuiz = questionQuizList.get(questionCounter - 1);
             score = savedInstanceState.getInt(KEY_SCORE);

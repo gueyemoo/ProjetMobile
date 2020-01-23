@@ -8,12 +8,13 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_marginTop="30dp"
+        android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
         android:layout_gravity="center_horizontal"
-        android:text="Salut, que veux-tu faire ?" />
+        android:layout_marginTop="30dp"
+        android:text="Salut, que veux-tu faire ?"
+        android:textSize="24sp" />
 
 
     <ScrollView

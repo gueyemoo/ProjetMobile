@@ -8,6 +8,7 @@ import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.project.MobileProjet.DB.DBClient;
 import com.project.MobileProjet.DB.User;
@@ -40,6 +41,9 @@ public class ChoixCategorieExerciceActivity extends AppCompatActivity {
         {
             ((MyApp) this.getApplication()).setNbOpeJ2(0);
             loadNicknames();
+            TextView welcome = findViewById(R.id.welcome);
+            welcome.setText("Quel exercice voulez-vous réaliser ?");
+
 
         }
         ((MyApp) this.getApplication()).setNbOpe(0);
@@ -140,9 +144,13 @@ public class ChoixCategorieExerciceActivity extends AppCompatActivity {
 
             @Override
             protected void onPostExecute(Void v) {
-                nicknameP1 = utilisateurActuel1.getPseudo();
-                nicknameP2 = utilisateurActuel2.getPseudo();
-                nicknameLoaded = true;
+                if(utilisateurActuel1 != null && utilisateurActuel2 != null)
+                {
+                    nicknameP1 = utilisateurActuel1.getPseudo();
+                    nicknameP2 = utilisateurActuel2.getPseudo();
+                    nicknameLoaded = true;
+                }
+
             }
 
         }

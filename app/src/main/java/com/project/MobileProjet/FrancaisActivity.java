@@ -68,7 +68,7 @@ public class FrancaisActivity extends AppCompatActivity {
         bouton_continuer.setVisibility(View.INVISIBLE);
         commentaire.setVisibility(View.INVISIBLE);
 
-        final int max = QuestionFrancais.questions.length;
+        final int max = 10;
         statutQuestion.setText("Question: " + i + "/" + max);
         scoreView.setText("Score : " + score);
 
@@ -142,9 +142,9 @@ public class FrancaisActivity extends AppCompatActivity {
                     bouton_continuer.setVisibility(View.VISIBLE);
                     commentaire.setVisibility(View.VISIBLE);
                     reponse.setEnabled(false);
-                    commentaire.setText("BRAVO ! Tu maîtrises toutes les figures de style !");
+                    //commentaire.setText("");
                     saveScore(score);
-                    bouton_continuer.setText("Retour Choix Catégorie");
+                    bouton_continuer.setText("Retour aux exercices");
                     bouton_continuer.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {

@@ -144,6 +144,7 @@ public class AdditionActivity extends AppCompatActivity {
                             intent.putExtra("joueurActuel", 1);
                         }
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         intent.putExtra("nicknameP1",nicknameP1);
                         intent.putExtra("nicknameP2",nicknameP2);
                         startActivity(intent);
@@ -155,9 +156,8 @@ public class AdditionActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         Intent intent = new Intent(v.getContext(), AdditionActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         ((MyApp) AdditionActivity.this.getApplication()).setNbOpe(++nbOpeJ1);
-                        intent.putExtra("nicknameP1",nicknameP1);
-                        intent.putExtra("nicknameP2",nicknameP2);
                         startActivity(intent);
                         finish();
                     }

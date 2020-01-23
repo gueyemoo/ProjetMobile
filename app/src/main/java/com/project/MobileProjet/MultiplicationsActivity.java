@@ -147,7 +147,7 @@ public class MultiplicationsActivity extends AppCompatActivity {
 
             if(joueurActuel == 2)
             {
-                choixJeu.setText("RETOUR AUX EXERCICES");
+                choixJeu.setText("Retour aux exercices");
                 saveScoreDuel("multiplication",((MyApp) this.getApplication()).getScore(),10-nbErreurs);
                 ((MyApp) MultiplicationsActivity.this.getApplication()).setScore(10-nbErreurs);
                 choixJeu.setOnClickListener( new OnClickListener() {
@@ -160,7 +160,7 @@ public class MultiplicationsActivity extends AppCompatActivity {
                 });
             }else{
                 ((MyApp) this.getApplication()).setScore(10-nbErreurs);
-                choixJeu.setText("Au tour de " + pseudo);
+                choixJeu.setText("Au tour de " + getIntent().getStringExtra("nicknameP2"));
                 choixJeu.setOnClickListener( new OnClickListener() {
                     public void onClick(View v) {
                         finish();
